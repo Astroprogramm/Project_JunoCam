@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 from PIL import Image,ImageFilter  
 from PIL import ImageEnhance  
 
+from PIL.ImageFilter import DETAIL
+
 #to download images from URL:
 from PIL import Image
 from urllib.request import urlopen
@@ -17,9 +19,7 @@ class EditorImagenes:
     def __init__(self):
         self.url = "https://python-pillow.org/images/pillow-logo.png"
         self.img = Image.open(urlopen(self.url))
-
         #Reading images to numpy arrays:
-
         self.red = Image.open('Imagenes/JNCE_2021246_36C00061_V01-red.png')
         self.green = Image.open('Imagenes/JNCE_2021246_36C00061_V01-green.png')
         self.blue = Image.open('Imagenes/JNCE_2021246_36C00061_V01-blue.png')
@@ -44,15 +44,14 @@ class EditorImagenes:
 
     #2.  Image processing features like brightness adjustment, color and contrast enhancement, etc.
     #Color 
-    from PIL import ImageFilter
-    from PIL.ImageFilter import DETAIL
+    
     #Brigtness adjustment:
         # A value of 1.0 will preserve the original image
         # Values 1.0+ will brighten the image
         # A value of 0 will return a pitch-black image
     #An enhancement factor of 0.0 gives a black image. A factor of 1.0 gives the original image.
-    def brightness_adjustment(imagen,factor):
-        image = ImageEnhance.Brightness(imagen)
+    def brightness_adjustment(self,factor):
+        image = ImageEnhance.Brightness(self.imageRGB)
         final_image= image.enhance(factor)
         #Para mostrar la imagen (sale en un visor de imagenes)
         final_image.show()
