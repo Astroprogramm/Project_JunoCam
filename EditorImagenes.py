@@ -60,8 +60,8 @@ class EditorImagenes:
 
     #Color adjustment:
     #An enhancement factor of 0.0 gives a black and white image. A factor of 1.0 gives the original image.
-    def color_adjustment(imagen,factor):
-        image =  ImageEnhance.Color(imagen)
+    def color_adjustment(self,factor):
+        image =  ImageEnhance.Color(self.imageRGB)
         final_image= image.enhance(factor)
         #Para mostrar la imagen (sale en un visor de imagenes)
         final_image.show()
@@ -74,8 +74,8 @@ class EditorImagenes:
     #     Values 1.0+ will add contrast to the image
     #     A value of 0 will return a solid-gray image
     #An enhancement factor of 0.0 gives a solid grey image. A factor of 1.0 gives the original image.
-    def contrast_adjustment(imagen,factor):
-        image =  ImageEnhance.Contrast(imagen)
+    def contrast_adjustment(self,factor):
+        image =  ImageEnhance.Contrast(self.imageRGB)
         final_image= image.enhance(factor)
         #Para mostrar la imagen (sale en un visor de imagenes)
         final_image.show()
@@ -84,16 +84,16 @@ class EditorImagenes:
 
     #Sharpness adjustment:
     #An enhancement factor of 0.0 gives a blurred image, a factor of 1.0 gives the original image, and a factor of 2.0 gives a sharpened image.
-    def sharpness_adjustment(imagen,factor):
-        image =  ImageEnhance.Sharpness(imagen)
+    def sharpness_adjustment(self,factor):
+        image =  ImageEnhance.Sharpness(self.imageRGB)
         final_image= image.enhance(factor)
         #Para mostrar la imagen (sale en un visor de imagenes)
         final_image.show()
         #Para guardar las imagenes:
         final_image.save()
 
-    def detail_adjustment(imagen):
-        final_image=imagen.filter(DETAIL)
+    def detail_adjustment(self):
+        final_image=self.imageRGB.filter(DETAIL)
         #Para mostrar la imagen (sale en un visor de imagenes)
         final_image.show()
         #Para guardar las imagenes:
