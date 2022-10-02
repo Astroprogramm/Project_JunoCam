@@ -13,13 +13,13 @@ ventana.geometry("450x300")
 #Preparar Ambiente
 def main(boton):
    if boton == 1:
+    botonMain.destroy()
     botonImage.pack()
     
 
 #Mostrar Imagen
 def images(boton):
    if boton == 1:   
-      botonMain.destroy()
       EditorImagenes().showImage()
 
 

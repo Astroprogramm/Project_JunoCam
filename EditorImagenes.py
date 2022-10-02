@@ -20,11 +20,11 @@ class EditorImagenes:
 
         #Reading images to numpy arrays:
 
-        self.red = Image.open('JNCE_2021246_36C00061_V01-red.png')
-        self.green = Image.open('JNCE_2021246_36C00061_V01-green.png')
-        self.blue = Image.open('JNCE_2021246_36C00061_V01-blue.png')
-        self.map= Image.open('JNCE_2021246_36C00061_V01-mapprojected.png')
-        self.raw_stripes=Image.open('JNCE_2021246_36C00061_V01-raw.png')
+        self.red = Image.open('Imagenes/JNCE_2021246_36C00061_V01-red.png')
+        self.green = Image.open('Imagenes/JNCE_2021246_36C00061_V01-green.png')
+        self.blue = Image.open('Imagenes/JNCE_2021246_36C00061_V01-blue.png')
+        self.map= Image.open('Imagenes/JNCE_2021246_36C00061_V01-mapprojected.png')
+        self.raw_stripes=Image.open('Imagenes/JNCE_2021246_36C00061_V01-raw.png')
 
         #Combining the images:
         self.imageRGB = np.dstack((self.red, self.green, self.blue))
