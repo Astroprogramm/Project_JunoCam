@@ -4,21 +4,11 @@ from matplotlib import image
 import matplotlib.pyplot as plt
 from PIL import Image,ImageFilter  
 from PIL import ImageEnhance  
-
 from PIL.ImageFilter import DETAIL
 
-#to download images from URL:
-from PIL import Image
-from urllib.request import urlopen
-
-# Point 1: download images from URL:
-#Revisé las urls de las imagenes pero son muy largas, no veo bien cómo automatizarlo,
-# o se puede escoger por ahora digamos 5 fotos
 #Las imagenes se pueden descargar de acá: https://www.missionjuno.swri.edu/junocam/processing
 class EditorImagenes:
     def __init__(self):
-        self.url = "https://python-pillow.org/images/pillow-logo.png"
-        self.img = Image.open(urlopen(self.url))
         #Reading images to numpy arrays:
         self.red = Image.open('Imagenes/JNCE_2021246_36C00061_V01-red.png')
         self.green = Image.open('Imagenes/JNCE_2021246_36C00061_V01-green.png')
@@ -54,9 +44,10 @@ class EditorImagenes:
         image = ImageEnhance.Brightness(self.imageRGB)
         final_image= image.enhance(factor)
         #Para mostrar la imagen (sale en un visor de imagenes)
-        final_image.show()
+        self.imageRGB.show('Imagen Inicial')
+        final_image.show('Imagen Final')
         #Para guardar las imagenes:
-        final_image.save()
+        final_image.save('ImagenFinal.png')
 
     #Color adjustment:
     #An enhancement factor of 0.0 gives a black and white image. A factor of 1.0 gives the original image.
@@ -64,9 +55,10 @@ class EditorImagenes:
         image =  ImageEnhance.Color(self.imageRGB)
         final_image= image.enhance(factor)
         #Para mostrar la imagen (sale en un visor de imagenes)
-        final_image.show()
+        self.imageRGB.show('Imagen Inicial')
+        final_image.show('Imagen Final')
         #Para guardar las imagenes:
-        final_image.save()
+        final_image.save('ImagenFinal.png')
 
 
     # #Contrast adjustment:
@@ -78,9 +70,10 @@ class EditorImagenes:
         image =  ImageEnhance.Contrast(self.imageRGB)
         final_image= image.enhance(factor)
         #Para mostrar la imagen (sale en un visor de imagenes)
-        final_image.show()
+        self.imageRGB.show('Imagen Inicial')
+        final_image.show('Imagen Final')
         #Para guardar las imagenes:
-        final_image.save()
+        final_image.save('ImagenFinal.png')
 
     #Sharpness adjustment:
     #An enhancement factor of 0.0 gives a blurred image, a factor of 1.0 gives the original image, and a factor of 2.0 gives a sharpened image.
@@ -88,22 +81,16 @@ class EditorImagenes:
         image =  ImageEnhance.Sharpness(self.imageRGB)
         final_image= image.enhance(factor)
         #Para mostrar la imagen (sale en un visor de imagenes)
-        final_image.show()
+        self.imageRGB.show('Imagen Inicial')
+        final_image.show('Imagen Final')
         #Para guardar las imagenes:
-        final_image.save()
+        final_image.save('ImagenFinal.png')
 
     def detail_adjustment(self):
         final_image=self.imageRGB.filter(DETAIL)
         #Para mostrar la imagen (sale en un visor de imagenes)
-        final_image.show()
+        self.imageRGB.show('Imagen Inicial')
+        final_image.show('Imagen Final')
         #Para guardar las imagenes:
-        final_image.save()
+        final_image.save('ImagenFinal.png')
 
-
-    #sharpness_adjustment(imageRGB,1.0)     #OK
-    #brightness_adjustment(imageRGB,2.0)    #OK
-    #color_adjustment(imageRGB,1.7)         #OK
-    #contrast_adjustment(imageRGB,0.5)      #OK
-    #detail_adjustment(imageRGB)            #OK
-
-    #El punto 6 se puede hacer porque tenemos guardada la imagen original en las funciones como imagen, y la imagen modificada es final_image
