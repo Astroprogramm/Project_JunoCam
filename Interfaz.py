@@ -3,9 +3,11 @@ from EditorImagenes import *
 
 editor = EditorImagenes()
 
+#Ventana principal
 ventana = tkinter.Tk()
 ventana.geometry("700x500")
 
+#Etiquetas
 etiqueta = tkinter.Label(ventana, text = "Editor de Imágenes", bg="gray", width=50, height=5)
 etiqueta.grid(row=0, column=0)
 
@@ -20,23 +22,23 @@ def main(boton):
    if boton == 1:
     botonMain.destroy()
     botonImage.grid(row=0, column=1)
-
+   #Ajuste Brillo
     botonBrillo.grid(row=0, column=2)
     cajaBrillo.grid(row=2, column=2)
     etiqueta_brillo.grid(row=2, column=1)
-
+   #Ajuste Color
     botonColor.grid(row=3, column=2)
     cajaColor.grid(row=5, column=2)
     etiqueta_color.grid(row=5, column=1)
-
+   #Ajuste Contraste
     botonContraste.grid(row=6, column=2)
     cajaContraste.grid(row=7, column=2)
     etiqueta_contraste.grid(row=7, column=1)
-
+   #Ajuste Nitidez
     botonNitidez.grid(row=3, column=0)
     cajaNitidez.grid(row=4, column=0)
     etiqueta_nitidez.grid(row=5, column=0)
-
+   #Ajuste Detalle
     botonDetalle.grid(row=6, column=0)
     etiqueta_detalle.grid(row=7, column=0)
 
@@ -75,10 +77,12 @@ def ajustarDetalle(boton):
    if boton == 1:
       EditorImagenes().detail_adjustment()
 
+#Obtener valor de la caja de texto
 def getTexto(caja):
    text = caja.get()
    return text
 
+#Botones
 botonMain = tkinter.Button(ventana, text = "Menú", width=10, height=5, command= lambda:main(1))
 botonImage = tkinter.Button(ventana, text = "Dibujar", width=10, height=5, command= lambda:images(1))
 botonBrillo = tkinter.Button(ventana, text = "Ajustar Brillo", width=10, height=5, command= lambda:ajustarBrillo(1))
@@ -87,7 +91,7 @@ botonContraste = tkinter.Button(ventana, text = "Ajustar Contraste", width=14, h
 botonNitidez = tkinter.Button(ventana, text = "Ajustar Nitidez", width=12, height=5, command= lambda:ajustarNitidez(1))
 botonDetalle = tkinter.Button(ventana, text = "Ajustar Detalles", width=12, height=5, command= lambda:ajustarDetalle(1))
 
-
+#Cajas de texto
 cajaBrillo = tkinter.Entry(ventana, text="Ajustar brillo")
 cajaColor = tkinter.Entry(ventana, text="Ajustar Color")
 cajaContraste = tkinter.Entry(ventana, text="Ajustar Contraste")
