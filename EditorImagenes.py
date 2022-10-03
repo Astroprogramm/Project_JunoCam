@@ -47,7 +47,7 @@ class EditorImagenes:
         self.imageRGB.show('Imagen Inicial')
         final_image.show('Imagen Final')
         #Para guardar las imagenes:
-        final_image.save('ImagenFinal.png')
+        final_image.save('Imagenes/ImagenFinal_brillo.png')
 
     #Color adjustment:
     #An enhancement factor of 0.0 gives a black and white image. A factor of 1.0 gives the original image.
@@ -58,7 +58,7 @@ class EditorImagenes:
         self.imageRGB.show('Imagen Inicial')
         final_image.show('Imagen Final')
         #Para guardar las imagenes:
-        final_image.save('ImagenFinal.png')
+        final_image.save('Imagenes/ImagenFinal_color.png')
 
 
     # #Contrast adjustment:
@@ -73,7 +73,7 @@ class EditorImagenes:
         self.imageRGB.show('Imagen Inicial')
         final_image.show('Imagen Final')
         #Para guardar las imagenes:
-        final_image.save('ImagenFinal.png')
+        final_image.save('Imagenes/ImagenFinal_contraste.png')
 
     #Sharpness adjustment:
     #An enhancement factor of 0.0 gives a blurred image, a factor of 1.0 gives the original image, and a factor of 2.0 gives a sharpened image.
@@ -84,7 +84,7 @@ class EditorImagenes:
         self.imageRGB.show('Imagen Inicial')
         final_image.show('Imagen Final')
         #Para guardar las imagenes:
-        final_image.save('ImagenFinal.png')
+        final_image.save('Imagenes/ImagenFinal_nitidez.png')
 
     def detail_adjustment(self):
         final_image=self.imageRGB.filter(DETAIL)
@@ -92,5 +92,5 @@ class EditorImagenes:
         self.imageRGB.show('Imagen Inicial')
         final_image.show('Imagen Final')
         #Para guardar las imagenes:
-        final_image.save('ImagenFinal.png')
+        final_image.save('Imagenes/ImagenFinal_detalle.png')
 

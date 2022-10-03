@@ -1,7 +1,9 @@
 # Proyect_JunoCam
  Editor de imagenes para el repositorio del Proyecto JunoCam
 
- Para ejecutar ubicarse en la carpeta del proyecto, abrir la terminal y ejecutar el comando "python Interfaz.py"
+ Para ejecutar ubicarse en la carpeta del proyecto, abrir la terminal y ejecutar el comando "python JunoCam_Proyect.py"
+
+
 
 
 

@@ -5,6 +5,8 @@ editor = EditorImagenes()
 
 #Ventana principal
 ventana = tkinter.Tk()
+ventana.title('Juno Cam Proyect')
+ventana.iconbitmap('Imagenes/jupiter.ico')
 ventana.geometry("700x500")
 
 #Etiquetas
