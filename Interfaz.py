@@ -4,7 +4,7 @@ from EditorImagenes import *
 editor = EditorImagenes()
 
 ventana = tkinter.Tk()
-ventana.geometry("700x350")
+ventana.geometry("700x500")
 
 etiqueta = tkinter.Label(ventana, text = "Editor de Imágenes", bg="gray", width=50, height=5)
 etiqueta.grid(row=0, column=0)
