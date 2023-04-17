@@ -1,10 +1,94 @@
-# Proyect_JunoCam
- Editor de imagenes para el repositorio del Proyecto JunoCam
+![header image, Jupyter](https://i.pinimg.com/originals/8a/1d/fd/8a1dfdf9a42e0ff77a0703475ecf005d.jpg)
 
- Para ejecutar ubicarse en la carpeta del proyecto, abrir la terminal y ejecutar el comando "python JunoCam_Proyect.py"
+# <mark>Project JunoCam</mark> :telescope: :camera:
 
+[NASA SPACE APPS CHALLENGE - Project Dashboard](https://2022.spaceappschallenge.org/challenges/2022-challenges/jovian-system/teams/project_junocam/project)
 
+To run, go to the project folder, open the terminal and execute the command "python JunoCam_Project.py".
 
+## HIGH-LEVEL PROJECT SUMMARY
 
+We developed a desktop app that allows users to process images captured by JunoCam. This app is written in Python, which makes it run fast and of easy accessibility. Our project provides an easy interface to edit an image and start adjusting its brightness, contrast, among other features.
 
-<div class="ReactTabs__TabPanel ReactTabs__TabPanel--selected" role="tabpanel" id="react-tabs-1" aria-labelledby="react-tabs-0" style=""><div><div><div class="projectStatusWrapper-2FJmwJBq4QlQ9EsqMsQ2-N"><h3 class="projectStatusTitle-3c2EWZv3A0LFcrBcjxuT5u">Current Status:</h3><div class="projectStatus-3pMQcd46fqq8CRB5QII-cl savedDraft-3Ax2vuWdJWzmEz2Afr2dql"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle;"><g><path d="m15 27l17.7-17.7 2.3 2.3-20 20-9.3-9.3 2.3-2.3z"></path></g></svg><!-- react-text: 246 --><font _mstmutation="1"> Draft Saved</font><!-- /react-text --></div></div><div class="page-with-sidebar-iiaV4CHU1J7qpgoWbK9zz "><div class="main-content-2QLbBfQF3TIFl-se5-pbt3 "><div class="page-content-2V6D49XodOgEJrIhieLhxr none-1JelvxJ8lHI5T39eloReMF "><div class="projectHeading-33Uzzm5zXf_O0SjX9fJOsk"><h2 class="projectTitle-3LvfRfsHOViXkTzBKr_00K">JunoCam creativity</h2><div class="cta-wrap-2qph6KKP680iBxRQlh26XU"><button class="cta-24STx9Iwyn6Os5lgIDKZYc">Edit Project</button></div></div></div><div class="page-content-2V6D49XodOgEJrIhieLhxr none-1JelvxJ8lHI5T39eloReMF "><div><div class="projectInfo-2MQvGYmLR689Cqu_ZoONR"><h3 class="headingLabels-1AXu9MZZsiMmfl-IU76lQE">High-Level Project Summary</h3><div class="projectResponseCallout-3Cp7gqWQLzbjT-4bx2RViH"><p>We developed a desktop app that allows users to process images captured by JunoCam. This app is writen in Python, wich makes it run fast and of easy accesibility. Our project provides a easy interface to upload an image and start adjusting its brightness, contrats, among other features.</p></div></div><div class="projectInfo-2MQvGYmLR689Cqu_ZoONR"><h3 class="headingLabels-1AXu9MZZsiMmfl-IU76lQE">Link to Final Project</h3><div class="projectResponse-8B-saiH5e0gVP7EXIJv3U"><p><a target="_blank" rel="noopener noreferrer" href="https://github.com/JCamiloBeta/Proyect_JunoCam">https://github.com/JCamiloBeta/Proyect_JunoCam</a></p></div></div><div class="projectInfo-2MQvGYmLR689Cqu_ZoONR"><h3 class="headingLabels-1AXu9MZZsiMmfl-IU76lQE">Detailed Project Description</h3><div class="projectResponse-8B-saiH5e0gVP7EXIJv3U"><p>This app is writen in Python, using PIL (Pillow) library and matplotlib.</p><p>The user can choose an image from the available images and merge the RGB images in the desired order (RGB,RBG,GRB,GBR,BGR,BRG), start adjusting its brightness, contrast, color enhacement, sharpness and bringing up the details of the image.</p><p>You can also see the before and after image.</p><p>We hope to provide a tool to experiment and have fun beeing creative with JunoCam's images, which makes this images closer to the public and help us learn more details about Jupiter and its moon's.</p></div></div><div class="projectInfo-2MQvGYmLR689Cqu_ZoONR"><h3 class="headingLabels-1AXu9MZZsiMmfl-IU76lQE">Space Agency Data</h3><div class="projectResponse-8B-saiH5e0gVP7EXIJv3U"><p>We used images from JunoCam Galery.</p></div></div><div class="projectInfo-2MQvGYmLR689Cqu_ZoONR"><h3 class="headingLabels-1AXu9MZZsiMmfl-IU76lQE">Hackathon Journey</h3><div class="projectResponse-8B-saiH5e0gVP7EXIJv3U"><p>We choose this project because...</p><p><br></p><p>I (Angela) started this journey without even knowing how to create an app, but I really enjoy how NASA projects push to overcome obstacles, learn new things and achieve challenges that wasn't even formulated before. So I contacted Juan Camilo, who has a vast background in programming, and seeing the project description he was inmmediatly onboard. </p><p><br></p><p>So we teamed up: I searched in the Python libraries (the language I program the most) for image edition, and Juan developed the app. With our schedule really tight, it was difficult to commit initially to the project, but once we started we got motivated and kept programming until the app was functional to submit.</p><p><br></p><p><br></p><p><br></p></div></div><div class="projectInfo-2MQvGYmLR689Cqu_ZoONR"><h3 class="headingLabels-1AXu9MZZsiMmfl-IU76lQE">References</h3><div class="projectResponse-8B-saiH5e0gVP7EXIJv3U"><ol><li>https://www.pluralsight.com/guides/importing-image-data-into-numpy-arrays</li><li>https://stackoverflow.com/questions/58770164/combining-rgb-colours-of-pictures-into-one-picture-python-cimpl</li><li>https://medium.com/@timothymadegwa/basic-image-editing-with-python-f1a5a3171141</li><li>https://stackoverflow.com/questions/31544130/saving-an-imshow-like-image-while-preserving-resolution</li><li>https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.clim.html</li><li>https://www.geeksforgeeks.org/python-pil-imageenhance-color-and-imageenhance-contrast-method/</li><li>https://www.geeksforgeeks.org/python-pil-imageenhance-color-and-imageenhance-contrast-method/</li><li>https://holypython.com/python-pil-tutorial/how-to-adjust-brightness-contrast-sharpness-and-saturation-of-images-in-python-pil/</li><li>https://pillow.readthedocs.io/en/stable/reference/Image.html?highlight=fromarray#</li><li>https://hhsprings.bitbucket.io/docs/programming/examples/python/PIL/ImageFilter.html</li></ol></div></div><div class="projectInfo-2MQvGYmLR689Cqu_ZoONR"><h3 class="headingLabels-1AXu9MZZsiMmfl-IU76lQE">Tags</h3><div class="projectResponse-8B-saiH5e0gVP7EXIJv3U"><p>#JunoCam #ImageProcessing</p></div></div></div></div></div><div class="sidebar-2MG27682Nj-qse03Cl7tXB "><div class="card-37o-BkCY1bW0q2Nv-zhxmz "><p><!-- react-text: 284 --><font _mstmutation="1">You are a member of <em _mstmutation="1">Project_JunoCam</em>.</font><!-- /react-text --><!-- react-text: 286 --><!-- /react-text --></p><p>Your team is looking for new members.</p></div><div class="card-37o-BkCY1bW0q2Nv-zhxmz "><h4 class="cardTitle-2ewlMpQUsvN0sfTxS8A0Lw">Visualizing the Jovian System Like Never Before</h4><p class="cardDescription-7Pdw7wVVt8_u_8Skqwejk">While NASA’s space probe Juno orbits the planet Jupiter and its moons, its visible-light camera, JunoCam, captures dazzling views of the Jovian system in spectacular detail. Your challenge is to create innovative ways to process JunoCam raw images for scientific, artistic, or other fun purposes.</p></div></div></div></div></div></div>
+## LINK TO PROJECT "DEMO"
+https://docs.google.com/presentation/d/1EsfAk3h1pmf9p6rvmGclKU9S-WdX1j85NAAECheZvMk/edit?usp=sharing
+
+## DETAILED PROJECT DESCRIPTION
+
+This app is written in Python, using PIL (Pillow) library and Matplotlib.
+
+The user can adjust its brightness, contrast, color enhancement and sharpness entering the desired value in the app, and also sharpen details of the image.
+
+The before and after images are displayed; and the final image will be saved in the computer.
+
+We hope to provide a tool to experiment and have fun being creative with JunoCam's images, bringing closer these images to the public and help us learn more details about Jupiter and its moon's. Since the interface is in Spanish, this brings the JunoCam project closer to the Spanish-speaking public.
+
+## SPACE AGENCY DATA
+
+We used images from JunoCam Galery.
+
+## HACKATHON JOURNEY
+
+I (Juan Camilo) liked this project because it allowed me to gain knowledge about the Juno project and apply it to my area of ​​knowledge, which is development, where I get an idea of ​​how NASA professionals interpret the images that come to them from the space probe that orbits around of Jupiter to make the conclusions relevant to their area of ​​​​investigation
+
+I (Angela) started this journey without even knowing how to create an app, but I really enjoy how NASA projects push to overcome obstacles, learn new things and achieve challenges that wasn't even formulated before. I wasn't able to go to the local event because of some health issues, but I really wanted to participate.
+
+So I contacted my friend Juan Camilo, who has a vast background in programming, and seeing the project description he was immediately onboard.
+
+Then, we teamed up: I searched in the Python libraries (the language I program the most) for image edition, and Juan developed the app. With our schedule really tight, it was difficult to commit initially to the project, but once we started we got motivated and kept programming until the app was functional to submit.
+
+This project was a fun and learning experience for us, and gives us an app that can be developed further to upgrade the user's experience
+
+## REFERENCES
+
+1. https://www.pluralsight.com/guides/importing-image-data-into-numpy-arrays
+2. https://stackoverflow.com/questions/58770164/combining-rgb-colours-of-pictures-into-one-picture-python-cimpl
+3. https://medium.com/@timothymadegwa/basic-image-editing-with-python-f1a5a3171141
+4. https://stackoverflow.com/questions/31544130/saving-an-imshow-like-image-while-preserving-resolution
+5. https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.clim.html
+6. https://www.geeksforgeeks.org/python-pil-imageenhance-color-and-imageenhance-contrast-method/
+7. https://www.geeksforgeeks.org/python-pil-imageenhance-color-and-imageenhance-contrast-method/
+8. https://holypython.com/python-pil-tutorial/how-to-adjust-brightness-contrast-sharpness-and-saturation-of-images-in-python-pil/
+9. https://pillow.readthedocs.io/en/stable/reference/Image.html?highlight=fromarray#
+10. https://hhsprings.bitbucket.io/docs/programming/examples/python/PIL/ImageFilter.html
+11. https://www.geeksforgeeks.org/python-pil-image-save-method/
+
+### TAGS
+
+#JunoCam #ImageProcessing
+
+___
+# <mark>Proyecto JunoCam</mark> :telescope: :camera:
+
+Para ejecutarlo, vaya a la carpeta del proyecto, abra el terminal y ejecute el comando "python JunoCam_Project.py".
+
+## RESUMEN GENERAL DEL PROYECTO
+
+Hemos desarrollado una aplicación de escritorio que permite a los usuarios procesar imágenes capturadas por JunoCam. Esta app está escrita en Python, lo que hace que se ejecute rápidamente y sea de fácil accesibilidad. Nuestro proyecto proporciona una interfaz sencilla para editar una imagen y comenzar a ajustar su brillo, contraste, entre otras características.
+
+## ENLACE AL PROYECTO "DEMO
+https://docs.google.com/presentation/d/1EsfAk3h1pmf9p6rvmGclKU9S-WdX1j85NAAECheZvMk/edit?usp=sharing
+
+## DESCRIPCIÓN DETALLADA DEL PROYECTO
+
+Esta aplicación está escrita en Python, utilizando la librería PIL (Pillow) y Matplotlib.
+
+El usuario puede ajustar su brillo, contraste, realce de color y nitidez introduciendo el valor deseado en la app, y también afinar detalles de la imagen.
+
+Se muestran las imágenes del antes y el después; y la imagen final se guardará en el ordenador.
+
+Esperamos proporcionar una herramienta para experimentar y divertirse siendo creativos con las imágenes de JunoCam, acercar estas imágenes al público y ayudarnos a conocer más detalles sobre Júpiter y sus lunas. Dado que la interfaz está en español, esto acerca el proyecto JunoCam al público hispanohablante.
+
+## DATOS DE LA AGENCIA ESPACIAL
+
+Hemos utilizado imágenes de la JunoCam Galery.
+
+## HACKATHON JOURNEY
+
+A mí (Juan Camilo) me gustó este proyecto porque me permitió adquirir conocimientos sobre el proyecto Juno y aplicarlos a mi área de conocimiento, que es el desarrollo, donde me doy una idea de cómo los profesionales de la NASA interpretan las imágenes que les llegan de la sonda espacial que orbita alrededor de Júpiter para sacar las conclusiones pertinentes a su área de investigación
+
+Yo (Angela) empecé este viaje sin saber siquiera cómo crear una aplicación, pero me gusta mucho cómo los proyectos de la NASA empujan a superar obstáculos, aprender cosas nuevas y alcanzar retos que antes ni siquiera se habían formulado. No pude ir al evento local por algunos problemas de salud, pero realmente quería participar.
+
+Así que me puse en contacto con mi amigo Juan Camilo, que tiene una amplia experiencia en programación, y al ver la descripción del proyecto se apuntó inmediatamente. Formamos un equipo: Yo busqué en las librerías de Python (el lenguaje que más programo) la edición de imágenes, y Juan desarrolló la app. Con nuestra agenda muy apretada, fue difícil comprometernos inicialmente con el proyecto, pero una vez que empezamos nos motivamos y seguimos programando hasta que la app estuvo funcional para presentarla.
+
+Este proyecto fue una experiencia divertida y de aprendizaje para nosotros, y nos da una aplicación que se puede desarrollar aún más para mejorar la experiencia del usuario.
